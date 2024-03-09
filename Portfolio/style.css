@@ -1,0 +1,323 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Local classes or ID's */
+
+
+li{
+    list-style-type: none;
+}
+
+button {
+    font-weight: 500;
+    color: white;
+    padding: 3px 10px;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+button a {
+    text-decoration: none;
+    color:white;
+}
+
+button:hover {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.fa-brands,
+.fa-solid{
+    font-size:50px;
+    margin-top:60px;
+    transition:0.3s;
+}
+
+.fa-brands:hover{
+    transform: scale(1.1)
+}
+.fa-solid:hover{
+    transform:scale(1.1)
+}
+
+.highlight{
+    border:3px solid #0D6EFD;
+}
+
+
+.highlight:hover{
+    border:3px solid transparent;
+}
+
+
+/* Nav start  */
+
+#nav-bar {
+    width:100%;
+    position: fixed;
+    margin-top: -230px;
+    z-index:1;
+    background-color:#212529;
+}
+
+#brand-logo {
+    font-weight: bold;
+}
+
+#toggler {
+    color: white;
+    padding:0;
+    background-color: transparent;
+}
+
+
+#toggler .fa-solid{
+    font-size:20px;
+    margin:0;
+}
+
+.fa {
+    background-color: black;
+}
+
+/* nav end  */
+
+/* Landing start  */
+
+#land-h4 {
+    margin-top:230px;
+}
+
+#title {
+    font-size: 20px;
+}
+
+#description {
+    font-size: 16px;
+}
+
+/* landing end  */
+
+/* portfolio section start  */
+
+#portfolio {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#portfolio #image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#portfolio #image img {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom:20px;
+}
+
+
+/* portfolio section end  */
+
+/* mind section start  */
+#mind{
+    width:100%;
+    padding-top:20px;
+}
+/* mind section end  */
+
+
+
+
+/* Expertise section start */
+
+#exp-container{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    margin:10px;
+    justify-content:space-around;
+}
+
+#expe-box{
+    width:20%;
+    height:200px;
+    display:block;
+    align-items:center;
+    justify-content: center;
+    background-color: red;
+    margin:10px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+
+#expe-box h6{
+    padding:15px;
+}
+
+
+/* Expertise section end */
+
+
+/* Services section start */
+
+#services-sec{
+    width:100%;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#services-sec div{
+    display:flex;
+    align-items:center;
+}
+
+#services-sec div h6{
+    padding-top:60px;
+    padding-left:30px;
+}
+
+/* Contact section start */
+
+
+#contact input{
+    width:60%;
+    height:40px;
+    display:block;
+    align-items:center;
+    margin:0 auto;
+    outline:none;
+    color:white;
+    padding:10px;
+    background-color:black;
+    border-radius:7px;
+}
+
+
+
+#contact #message{
+    min-height:120px;
+    width: 60%;
+    height: 40px;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    outline: none;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-radius: 7px;
+}
+
+/* Contact section end */
+
+
+/* about section start */
+
+#about{
+    width:100%;
+}
+
+#about div{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+#about #text{
+    width:500px;
+}
+
+#about #image img{
+   
+    height:500px;
+}
+
+/* about section start */
+
+
+
+/* footer start */
+footer{
+    width:100%;
+    height:100px;
+    z-index: 1;
+    background-color:black;
+    
+}
+/* footer end */
+
+
+/* start responsive style section */
+
+
+
+
+
+
+@media (max-width:760px) {
+    #portfolio #image {
+            width: 100%;
+        }
+
+        #portfolio #image img{
+            width:100%;
+        }
+
+    #exp-container{
+        width:90%;
+    }
+
+    #expe-box{
+        width:100%;
+    }
+
+    #services-sec div{
+        width:40%;
+    }
+
+    #contact input{
+        width:90%;
+    }
+
+    #contact #message{
+        width:90%;
+    }
+
+
+        #about div{
+            width:100%;
+            display: block;
+        }
+
+        #about #text {
+            width: 100%;
+        }
+    
+        #about #image{
+            width:100%;
+            display:flex;
+            justify-content: center;
+        }
+
+    
+}
+
+
+
+
